@@ -38,7 +38,7 @@ const ImageUpload = ({ onImageUpload }) => {
 
   return (
     <div style={wrapperStyle}>
-      <label style={btn} htmlFor="imageInput">Choose an image</label>
+      <label style={btn} htmlFor="imageInput">Open My File ( 1 )</label>
       <input type="file" id="imageInput" style={inputStyle} onChange={handleImageChange} />
       {selectedImage && <img src={URL.createObjectURL(selectedImage)} alt="Preview" style={previewStyle} />}
     </div>
